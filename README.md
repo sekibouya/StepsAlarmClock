@@ -28,8 +28,12 @@ _※あなたはスリープしますが、端末はスリープしないでく�
 <img width="30%" alt="image" src="https://github.com/sekibouya/StepsAlarmClock/assets/99582134/d14d9e63-0f9e-49c1-a122-c421fbd52855">
 
 
-### 4. アラームが鳴る
+### 4. 指定した時間にアラームが鳴る
 音量が自動的に最大になり、画面の明るさは元に戻ります。
+
+音楽と共にバイブレーションも発動します。
+
+使用した自作の音楽は[こちら](https://youtu.be/v3Y3oMK3Pz0)
 
 <img width="30%" alt="image" src="https://github.com/sekibouya/StepsAlarmClock/assets/99582134/4a5b5436-c310-4fa8-b254-ac6136d1eaba">
 
