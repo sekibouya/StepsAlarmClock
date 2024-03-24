@@ -56,6 +56,3 @@ _※あなたはスリープしますが、端末はスリープしないでく�
 ## Author
 name: せき<br>
 X: @sekibouya_
-
-## Licence
-MIT
