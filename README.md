@@ -35,11 +35,11 @@ _※あなたはスリープしますが、端末はスリープしないでく�
 
 使用した自作の音楽は[こちら](https://youtu.be/v3Y3oMK3Pz0)
 
-<img width="30%" alt="image" src="https://github.com/sekibouya/StepsAlarmClock/assets/99582134/4a5b5436-c310-4fa8-b254-ac6136d1eaba">
-
 
 ### 5. 10歩歩く
 残りの歩数が画面に表示されています。
+
+<img width="30%" alt="image" src="https://github.com/sekibouya/StepsAlarmClock/assets/99582134/4a5b5436-c310-4fa8-b254-ac6136d1eaba">
 
 ### 6. アラーム停止ボタンを押す
 ボタンが青色に変わったらボタンを押し、アラームを停止します。
