@@ -11,6 +11,10 @@
 		D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* ContentView.swift */; };
 		D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E0592BA3FA8F00529615 /* Assets.xcassets */; };
 		D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */; };
+		D153E0642BA408A500529615 /* SetTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0632BA408A500529615 /* SetTimeView.swift */; };
+		D153E06D2BABC3EB00529615 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D153E06C2BABC3EB00529615 /* CoreMotion.framework */; };
+		D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0752BAC2ABE00529615 /* AppDelegate.swift */; };
+		D153E0782BAD780100529615 /* MPVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0772BAD780100529615 /* MPVolume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		D153E0572BA3FA8C00529615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D153E0592BA3FA8F00529615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D153E0632BA408A500529615 /* SetTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeView.swift; sourceTree = "<group>"; };
+		D153E06C2BABC3EB00529615 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D153E0752BAC2ABE00529615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D153E06D2BABC3EB00529615 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +45,11 @@
 		D153E0492BA3FA8B00529615 = {
 			isa = PBXGroup;
 			children = (
+				D153E0772BAD780100529615 /* MPVolume.swift */,
+				D153E0752BAC2ABE00529615 /* AppDelegate.swift */,
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
 				D153E0532BA3FA8C00529615 /* Products */,
+				D153E06B2BABC3EA00529615 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +64,10 @@
 		D153E0542BA3FA8C00529615 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				D153E06E2BABC79100529615 /* Info.plist */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
 				D153E0572BA3FA8C00529615 /* ContentView.swift */,
+				D153E0632BA408A500529615 /* SetTimeView.swift */,
 				D153E0592BA3FA8F00529615 /* Assets.xcassets */,
 				D153E05B2BA3FA8F00529615 /* Preview Content */,
 			);
@@ -65,6 +80,14 @@
 				D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D153E06B2BABC3EA00529615 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D153E06C2BABC3EB00529615 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D153E0782BAD780100529615 /* MPVolume.swift in Sources */,
 				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
+				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
+				D153E0642BA408A500529615 /* SetTimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +301,14 @@
 				DEVELOPMENT_TEAM = XY72RAZ526;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlarmClock/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "歩数をカウントするためにモーションデータを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +333,14 @@
 				DEVELOPMENT_TEAM = XY72RAZ526;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlarmClock/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "歩数をカウントするためにモーションデータを使用します。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
