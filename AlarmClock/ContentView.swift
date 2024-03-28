@@ -141,7 +141,7 @@ struct ContentView: View {
     }
     
     func alarmStart() {
-        MPVolumeView.setVolume(1.0)
+        MPVolumeView.setVolume(0.3)
         UIScreen.main.brightness = brightness
         isShowAlert = true
         startCountSteps()
@@ -157,6 +157,9 @@ struct ContentView: View {
             musicPlayer.play()
         }catch{
             print("音の再生に失敗しました。")
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 19.0) {
+            MPVolumeView.setVolume(1.0)
         }
     }
     
